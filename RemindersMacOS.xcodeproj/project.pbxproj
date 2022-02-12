@@ -15,6 +15,7 @@
 		41BD948027B8385200238E01 /* RemindersModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 41BD947E27B8385200238E01 /* RemindersModel.xcdatamodeld */; };
 		41BD948627B8398B00238E01 /* MyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BD948527B8398B00238E01 /* MyList.swift */; };
 		41BD948927B8510A00238E01 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BD948827B8510A00238E01 /* CoreDataManager.swift */; };
+		41BD948C27B852BB00238E01 /* AddNewListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BD948B27B852BB00238E01 /* AddNewListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		41BD947F27B8385200238E01 /* RemindersModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RemindersModel.xcdatamodel; sourceTree = "<group>"; };
 		41BD948527B8398B00238E01 /* MyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyList.swift; sourceTree = "<group>"; };
 		41BD948827B8510A00238E01 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		41BD948B27B852BB00238E01 /* AddNewListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		41BD944127B8035400238E01 /* RemindersMacOS */ = {
 			isa = PBXGroup;
 			children = (
+				41BD948A27B852A800238E01 /* View Models */,
 				41BD948727B850FD00238E01 /* Managers */,
 				41BD948427B8398000238E01 /* Models */,
 				41BD945427B8313100238E01 /* Views */,
@@ -111,6 +114,14 @@
 				41BD948827B8510A00238E01 /* CoreDataManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		41BD948A27B852A800238E01 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				41BD948B27B852BB00238E01 /* AddNewListViewModel.swift */,
+			);
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41BD948927B8510A00238E01 /* CoreDataManager.swift in Sources */,
+				41BD948C27B852BB00238E01 /* AddNewListViewModel.swift in Sources */,
 				41BD945627B8314B00238E01 /* SideBarView.swift in Sources */,
 				41BD948027B8385200238E01 /* RemindersModel.xcdatamodeld in Sources */,
 				41BD944327B8035400238E01 /* RemindersMacOSApp.swift in Sources */,
