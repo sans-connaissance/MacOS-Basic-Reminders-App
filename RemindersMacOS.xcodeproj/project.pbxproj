@@ -17,6 +17,9 @@
 		41BD948927B8510A00238E01 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BD948827B8510A00238E01 /* CoreDataManager.swift */; };
 		41BD948C27B852BB00238E01 /* AddNewListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BD948B27B852BB00238E01 /* AddNewListViewModel.swift */; };
 		41BD948E27B854B900238E01 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BD948D27B854B900238E01 /* BaseModel.swift */; };
+		41BD949027B8592800238E01 /* AddNewListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BD948F27B8592800238E01 /* AddNewListView.swift */; };
+		41BD949227B85B2200238E01 /* ColorListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BD949127B85B2200238E01 /* ColorListView.swift */; };
+		41BD949727B8616500238E01 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BD949627B8616500238E01 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		41BD948827B8510A00238E01 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		41BD948B27B852BB00238E01 /* AddNewListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewListViewModel.swift; sourceTree = "<group>"; };
 		41BD948D27B854B900238E01 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		41BD948F27B8592800238E01 /* AddNewListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewListView.swift; sourceTree = "<group>"; };
+		41BD949127B85B2200238E01 /* ColorListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorListView.swift; sourceTree = "<group>"; };
+		41BD949627B8616500238E01 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = ../../../../../Downloads/Reminders/Reminders/Utils/Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +70,7 @@
 		41BD944127B8035400238E01 /* RemindersMacOS */ = {
 			isa = PBXGroup;
 			children = (
+				41BD949327B8613000238E01 /* Utils */,
 				41BD948A27B852A800238E01 /* View Models */,
 				41BD948727B850FD00238E01 /* Managers */,
 				41BD948427B8398000238E01 /* Models */,
@@ -98,6 +105,8 @@
 			isa = PBXGroup;
 			children = (
 				41BD945527B8314B00238E01 /* SideBarView.swift */,
+				41BD948F27B8592800238E01 /* AddNewListView.swift */,
+				41BD949127B85B2200238E01 /* ColorListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -125,6 +134,14 @@
 				41BD948B27B852BB00238E01 /* AddNewListViewModel.swift */,
 			);
 			path = "View Models";
+			sourceTree = "<group>";
+		};
+		41BD949327B8613000238E01 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				41BD949627B8616500238E01 /* Constants.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,11 +217,14 @@
 				41BD948927B8510A00238E01 /* CoreDataManager.swift in Sources */,
 				41BD948C27B852BB00238E01 /* AddNewListViewModel.swift in Sources */,
 				41BD945627B8314B00238E01 /* SideBarView.swift in Sources */,
+				41BD949027B8592800238E01 /* AddNewListView.swift in Sources */,
+				41BD949227B85B2200238E01 /* ColorListView.swift in Sources */,
 				41BD948027B8385200238E01 /* RemindersModel.xcdatamodeld in Sources */,
 				41BD944327B8035400238E01 /* RemindersMacOSApp.swift in Sources */,
 				41BD945327B8307400238E01 /* HomeScreen.swift in Sources */,
 				41BD948E27B854B900238E01 /* BaseModel.swift in Sources */,
 				41BD948627B8398B00238E01 /* MyList.swift in Sources */,
+				41BD949727B8616500238E01 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
