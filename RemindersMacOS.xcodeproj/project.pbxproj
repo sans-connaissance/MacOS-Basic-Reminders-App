@@ -20,6 +20,7 @@
 		41BD949027B8592800238E01 /* AddNewListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BD948F27B8592800238E01 /* AddNewListView.swift */; };
 		41BD949227B85B2200238E01 /* ColorListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BD949127B85B2200238E01 /* ColorListView.swift */; };
 		41BD949727B8616500238E01 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BD949627B8616500238E01 /* Constants.swift */; };
+		41BD949A27B87D4200238E01 /* NSColorTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BD949927B87D4200238E01 /* NSColorTransformer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		41BD948F27B8592800238E01 /* AddNewListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewListView.swift; sourceTree = "<group>"; };
 		41BD949127B85B2200238E01 /* ColorListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorListView.swift; sourceTree = "<group>"; };
 		41BD949627B8616500238E01 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = ../../../../../Downloads/Reminders/Reminders/Utils/Constants.swift; sourceTree = "<group>"; };
+		41BD949927B87D4200238E01 /* NSColorTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSColorTransformer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 		41BD944127B8035400238E01 /* RemindersMacOS */ = {
 			isa = PBXGroup;
 			children = (
+				41BD949827B87D3300238E01 /* Transformers */,
 				41BD949327B8613000238E01 /* Utils */,
 				41BD948A27B852A800238E01 /* View Models */,
 				41BD948727B850FD00238E01 /* Managers */,
@@ -142,6 +145,14 @@
 				41BD949627B8616500238E01 /* Constants.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		41BD949827B87D3300238E01 /* Transformers */ = {
+			isa = PBXGroup;
+			children = (
+				41BD949927B87D4200238E01 /* NSColorTransformer.swift */,
+			);
+			path = Transformers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,6 +235,7 @@
 				41BD945327B8307400238E01 /* HomeScreen.swift in Sources */,
 				41BD948E27B854B900238E01 /* BaseModel.swift in Sources */,
 				41BD948627B8398B00238E01 /* MyList.swift in Sources */,
+				41BD949A27B87D4200238E01 /* NSColorTransformer.swift in Sources */,
 				41BD949727B8616500238E01 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
