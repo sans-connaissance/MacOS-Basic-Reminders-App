@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4133481F27B9563E002A90DA /* MyListItemsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4133481E27B9563E002A90DA /* MyListItemsHeaderView.swift */; };
+		4133482127B957E2002A90DA /* MyListItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4133482027B957E2002A90DA /* MyListItemsView.swift */; };
+		4133482327B95A3C002A90DA /* MyListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4133482227B95A3C002A90DA /* MyListItemViewModel.swift */; };
+		4133482527B95AEC002A90DA /* DueDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4133482427B95AEC002A90DA /* DueDate.swift */; };
+		4133482827B95B26002A90DA /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4133482727B95B26002A90DA /* Date+Extensions.swift */; };
 		41BD944327B8035400238E01 /* RemindersMacOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BD944227B8035400238E01 /* RemindersMacOSApp.swift */; };
 		41BD944727B8035500238E01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41BD944627B8035500238E01 /* Assets.xcassets */; };
 		41BD944A27B8035500238E01 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41BD944927B8035500238E01 /* Preview Assets.xcassets */; };
@@ -27,6 +32,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4133481E27B9563E002A90DA /* MyListItemsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListItemsHeaderView.swift; sourceTree = "<group>"; };
+		4133482027B957E2002A90DA /* MyListItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListItemsView.swift; sourceTree = "<group>"; };
+		4133482227B95A3C002A90DA /* MyListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListItemViewModel.swift; sourceTree = "<group>"; };
+		4133482427B95AEC002A90DA /* DueDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DueDate.swift; sourceTree = "<group>"; };
+		4133482727B95B26002A90DA /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		41BD943F27B8035400238E01 /* RemindersMacOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemindersMacOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41BD944227B8035400238E01 /* RemindersMacOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersMacOSApp.swift; sourceTree = "<group>"; };
 		41BD944627B8035500238E01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -59,6 +69,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4133482627B95B1B002A90DA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4133482727B95B26002A90DA /* Date+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		41BD943627B8035400238E01 = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +96,7 @@
 		41BD944127B8035400238E01 /* RemindersMacOS */ = {
 			isa = PBXGroup;
 			children = (
+				4133482627B95B1B002A90DA /* Extensions */,
 				41BD949827B87D3300238E01 /* Transformers */,
 				41BD949327B8613000238E01 /* Utils */,
 				41BD948A27B852A800238E01 /* View Models */,
@@ -117,6 +136,8 @@
 				41BD948F27B8592800238E01 /* AddNewListView.swift */,
 				41BD949127B85B2200238E01 /* ColorListView.swift */,
 				41BD949F27B8958B00238E01 /* MyListsView.swift */,
+				4133481E27B9563E002A90DA /* MyListItemsHeaderView.swift */,
+				4133482027B957E2002A90DA /* MyListItemsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -126,6 +147,7 @@
 			children = (
 				41BD948527B8398B00238E01 /* MyList.swift */,
 				41BD948D27B854B900238E01 /* BaseModel.swift */,
+				4133482427B95AEC002A90DA /* DueDate.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -144,6 +166,7 @@
 				41BD948B27B852BB00238E01 /* AddNewListViewModel.swift */,
 				41BD949B27B87F1700238E01 /* MyListsViewModel.swift */,
 				41BD949D27B8827200238E01 /* MyListViewModel.swift */,
+				4133482227B95A3C002A90DA /* MyListItemViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -237,6 +260,7 @@
 				41BD949C27B87F1700238E01 /* MyListsViewModel.swift in Sources */,
 				41BD948927B8510A00238E01 /* CoreDataManager.swift in Sources */,
 				41BD949E27B8827200238E01 /* MyListViewModel.swift in Sources */,
+				4133482327B95A3C002A90DA /* MyListItemViewModel.swift in Sources */,
 				41BD948C27B852BB00238E01 /* AddNewListViewModel.swift in Sources */,
 				41BD945627B8314B00238E01 /* SideBarView.swift in Sources */,
 				41BD949027B8592800238E01 /* AddNewListView.swift in Sources */,
@@ -246,8 +270,12 @@
 				41BD945327B8307400238E01 /* HomeScreen.swift in Sources */,
 				41BD948E27B854B900238E01 /* BaseModel.swift in Sources */,
 				41BD94A027B8958B00238E01 /* MyListsView.swift in Sources */,
+				4133482827B95B26002A90DA /* Date+Extensions.swift in Sources */,
+				4133482527B95AEC002A90DA /* DueDate.swift in Sources */,
+				4133482127B957E2002A90DA /* MyListItemsView.swift in Sources */,
 				41BD948627B8398B00238E01 /* MyList.swift in Sources */,
 				41BD949A27B87D4200238E01 /* NSColorTransformer.swift in Sources */,
+				4133481F27B9563E002A90DA /* MyListItemsHeaderView.swift in Sources */,
 				41BD949727B8616500238E01 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
