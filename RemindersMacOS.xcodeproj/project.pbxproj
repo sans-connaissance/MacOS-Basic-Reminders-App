@@ -23,6 +23,7 @@
 		41BD949A27B87D4200238E01 /* NSColorTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BD949927B87D4200238E01 /* NSColorTransformer.swift */; };
 		41BD949C27B87F1700238E01 /* MyListsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BD949B27B87F1700238E01 /* MyListsViewModel.swift */; };
 		41BD949E27B8827200238E01 /* MyListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BD949D27B8827200238E01 /* MyListViewModel.swift */; };
+		41BD94A027B8958B00238E01 /* MyListsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BD949F27B8958B00238E01 /* MyListsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		41BD949927B87D4200238E01 /* NSColorTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSColorTransformer.swift; sourceTree = "<group>"; };
 		41BD949B27B87F1700238E01 /* MyListsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListsViewModel.swift; sourceTree = "<group>"; };
 		41BD949D27B8827200238E01 /* MyListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListViewModel.swift; sourceTree = "<group>"; };
+		41BD949F27B8958B00238E01 /* MyListsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				41BD945527B8314B00238E01 /* SideBarView.swift */,
 				41BD948F27B8592800238E01 /* AddNewListView.swift */,
 				41BD949127B85B2200238E01 /* ColorListView.swift */,
+				41BD949F27B8958B00238E01 /* MyListsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 				41BD944327B8035400238E01 /* RemindersMacOSApp.swift in Sources */,
 				41BD945327B8307400238E01 /* HomeScreen.swift in Sources */,
 				41BD948E27B854B900238E01 /* BaseModel.swift in Sources */,
+				41BD94A027B8958B00238E01 /* MyListsView.swift in Sources */,
 				41BD948627B8398B00238E01 /* MyList.swift in Sources */,
 				41BD949A27B87D4200238E01 /* NSColorTransformer.swift in Sources */,
 				41BD949727B8616500238E01 /* Constants.swift in Sources */,

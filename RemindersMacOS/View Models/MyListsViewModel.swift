@@ -36,6 +36,13 @@ class MyListsViewModel: NSObject, ObservableObject {
         }
     }
     
+    func delete(_ myList: MyListViewModel) {
+        let myList: MyList? = MyList.byId(id: myList.id)
+        if let myList = myList {
+            try? myList.delete()
+        }
+    }
+    
 }
 
 extension MyListsViewModel: NSFetchedResultsControllerDelegate {
@@ -43,7 +50,7 @@ extension MyListsViewModel: NSFetchedResultsControllerDelegate {
         guard let myLists = controller.fetchedObjects as? [MyList] else {
             return
         }
-        
+
         self.myLists = myLists.map(MyListViewModel.init)
     }
 }
