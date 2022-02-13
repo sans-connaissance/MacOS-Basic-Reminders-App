@@ -13,9 +13,9 @@ struct AddNewListView: View {
     @ObservedObject var vm: AddNewListViewModel
     
     
-    init(vm: AddNewListViewModel){
-        self.vm = vm
-    }
+//    init(vm: AddNewListViewModel){
+//        self.vm = vm
+//    }
     
     var body: some View {
         Form {

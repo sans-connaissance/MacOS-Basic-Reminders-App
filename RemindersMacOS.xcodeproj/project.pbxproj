@@ -21,6 +21,8 @@
 		41BD949227B85B2200238E01 /* ColorListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BD949127B85B2200238E01 /* ColorListView.swift */; };
 		41BD949727B8616500238E01 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BD949627B8616500238E01 /* Constants.swift */; };
 		41BD949A27B87D4200238E01 /* NSColorTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BD949927B87D4200238E01 /* NSColorTransformer.swift */; };
+		41BD949C27B87F1700238E01 /* MyListsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BD949B27B87F1700238E01 /* MyListsViewModel.swift */; };
+		41BD949E27B8827200238E01 /* MyListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BD949D27B8827200238E01 /* MyListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		41BD949127B85B2200238E01 /* ColorListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorListView.swift; sourceTree = "<group>"; };
 		41BD949627B8616500238E01 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = ../../../../../Downloads/Reminders/Reminders/Utils/Constants.swift; sourceTree = "<group>"; };
 		41BD949927B87D4200238E01 /* NSColorTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSColorTransformer.swift; sourceTree = "<group>"; };
+		41BD949B27B87F1700238E01 /* MyListsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListsViewModel.swift; sourceTree = "<group>"; };
+		41BD949D27B8827200238E01 /* MyListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +139,8 @@
 			isa = PBXGroup;
 			children = (
 				41BD948B27B852BB00238E01 /* AddNewListViewModel.swift */,
+				41BD949B27B87F1700238E01 /* MyListsViewModel.swift */,
+				41BD949D27B8827200238E01 /* MyListViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -225,7 +231,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41BD949C27B87F1700238E01 /* MyListsViewModel.swift in Sources */,
 				41BD948927B8510A00238E01 /* CoreDataManager.swift in Sources */,
+				41BD949E27B8827200238E01 /* MyListViewModel.swift in Sources */,
 				41BD948C27B852BB00238E01 /* AddNewListViewModel.swift in Sources */,
 				41BD945627B8314B00238E01 /* SideBarView.swift in Sources */,
 				41BD949027B8592800238E01 /* AddNewListView.swift in Sources */,
