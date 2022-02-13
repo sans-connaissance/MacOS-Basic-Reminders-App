@@ -14,6 +14,7 @@ struct MyListItemsView: View {
                 Text("Item \(index)")
                 
             }
+            AddNewListItemView()
         }
     }
 }

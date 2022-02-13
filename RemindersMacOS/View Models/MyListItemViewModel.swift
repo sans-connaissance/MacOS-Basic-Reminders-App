@@ -16,9 +16,26 @@ struct MyListItemViewModel: Identifiable {
         self.myListItem = myListItem
     }
     
+    var listItemID: NSManagedObjectID {
+        myListItem.objectID
+    }
+    
     var title: String {
         myListItem.title ?? ""
     }
+    
+    var dueDate: DueDate? {
+        if let date = myListItem.dueDate {
+            return DueDate.from(value: date)
+        } else {
+            return nil
+        }
+    }
+    
+    var isCompleted: Bool {
+        myListItem.isCompleted
+    }
+    
     
     
 }
