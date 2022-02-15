@@ -9,21 +9,29 @@ import SwiftUI
 
 struct MyListItemsView: View {
     
+    var items: [MyListItemViewModel]
+    
     typealias ItemAdded = ((String, Date?) -> Void)?
     var onItemAdded: ItemAdded
     
-    init(onItemAdded: ItemAdded = nil) {
+    init(items: [MyListItemViewModel], onItemAdded: ItemAdded = nil) {
+        self.items = items
         self.onItemAdded = onItemAdded
     }
     
     var body: some View {
-        VStack(alignment:.leading) {
-            List(1...10, id: \.self) { index in
-                Text("Item \(index)")
+        
+        VStack(alignment: .leading) {
+            List {
                 
-            }
-            AddNewListItemView { title, dueDate in
-                onItemAdded?(title, dueDate)
+                ForEach(items, id: \.listItemID) { item in
+                    ListItemCell(item: item)
+                    Divider()
+                }
+                
+                AddNewListItemView { title, dueDate in
+                    onItemAdded?(title, dueDate)
+                }
             }
         }
     }
@@ -31,6 +39,6 @@ struct MyListItemsView: View {
 
 struct MyListItemView_Previews: PreviewProvider {
     static var previews: some View {
-        MyListItemsView()
+        MyListItemsView(items: [])
     }
 }
