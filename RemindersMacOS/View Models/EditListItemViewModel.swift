@@ -19,4 +19,13 @@ class EditListItemViewModel: ObservableObject {
         selectedDate = listItemVM.dueDate != nil ? (listItemVM.dueDate!.value) : nil
     }
     
+    func save() {
+        let myListItem: MyListItem? = MyListItem.byId(id: listItemVM.listItemId)
+        if let myListItem = myListItem {
+            myListItem.title = title
+            myListItem.dueDate = selectedDate
+            try? myListItem.save()
+        }
+    }
+    
 }

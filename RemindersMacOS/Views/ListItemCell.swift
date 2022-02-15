@@ -43,13 +43,18 @@ struct ListItemCell: View {
                     .onTapGesture {
                         showPopOver = true
                     }.popover(isPresented: $showPopOver, arrowEdge: .leading) {
-                        EditListItemView(item: item)
+                        EditListItemView(item: item) {
+                            showPopOver = false
+                        }
                     }
             }
         }
         .contentShape(Rectangle())
         .onHover { value in
-            active = value
+            
+            if !showPopOver {
+                active = value
+            }
         }
     }
 }

@@ -13,9 +13,11 @@ struct EditListItemView: View {
     @State private var selectedDate: Date = Date.today
     @ObservedObject var editListItemVM: EditListItemViewModel
     @State private var showCalendar: Bool = false
+    var onUpdated: () -> Void
     
-    init(item: MyListItemViewModel) {
+    init(item: MyListItemViewModel, onUpdated: @escaping () -> Void) {
         self.item = item
+        self.onUpdated = onUpdated
         editListItemVM = EditListItemViewModel(listItemVM: item)
     }
     
@@ -38,7 +40,8 @@ struct EditListItemView: View {
             HStack {
                 Spacer()
                 Button("Done") {
-                    
+                    editListItemVM.save()
+                    onUpdated()
                 }.buttonStyle(.borderedProminent)
             }
         }
@@ -51,6 +54,6 @@ struct EditListItemView_Previews: PreviewProvider {
     static var previews: some View {
         let viewContext = CoreDataManager.shared.persistentContainer.viewContext
         
-        EditListItemView(item: MyListItemViewModel(myListItem: MyListItem(context: viewContext)))
+        EditListItemView(item: MyListItemViewModel(myListItem: MyListItem(context: viewContext))) { }
     }
 }
