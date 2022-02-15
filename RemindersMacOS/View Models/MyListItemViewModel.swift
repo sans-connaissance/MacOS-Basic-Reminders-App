@@ -16,7 +16,7 @@ struct MyListItemViewModel: Identifiable {
         self.myListItem = myListItem
     }
     
-    var listItemID: NSManagedObjectID {
+    var listItemId: NSManagedObjectID {
         myListItem.objectID
     }
     

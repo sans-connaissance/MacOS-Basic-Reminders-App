@@ -12,11 +12,15 @@ struct MyListItemsView: View {
     var items: [MyListItemViewModel]
     
     typealias ItemAdded = ((String, Date?) -> Void)?
-    var onItemAdded: ItemAdded
+    typealias ItemDeleted = ((MyListItemViewModel) -> Void)?
     
-    init(items: [MyListItemViewModel], onItemAdded: ItemAdded = nil) {
+    var onItemAdded: ItemAdded
+    var onItemDeleted: ItemDeleted
+    
+    init(items: [MyListItemViewModel], onItemAdded: ItemAdded = nil, onItemDeleted: ItemDeleted = nil) {
         self.items = items
         self.onItemAdded = onItemAdded
+        self.onItemDeleted = onItemDeleted
     }
     
     var body: some View {
@@ -24,8 +28,10 @@ struct MyListItemsView: View {
         VStack(alignment: .leading) {
             List {
                 
-                ForEach(items, id: \.listItemID) { item in
-                    ListItemCell(item: item)
+                ForEach(items, id: \.listItemId) { item in
+                    ListItemCell(item: item, onListItemDeleted: { item in
+                        onItemDeleted?(item)
+                    })
                     Divider()
                 }
                 
