@@ -20,8 +20,22 @@ class MyListsViewModel: NSObject, ObservableObject {
         fetchedResultsController = NSFetchedResultsController(fetchRequest: MyList.all, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
         super.init()
         fetchedResultsController.delegate = self
+        setupObservers()
         fetchAll()
         
+    }
+    
+    private func setupObservers() {
+        let notificationCenter = NotificationCenter.default
+        notificationCenter.addObserver(self, selector: #selector(managedObjectContextObjectsDidChange), name: NSNotification.Name.NSManagedObjectContextObjectsDidChange, object: context)
+    }
+    
+    @objc func managedObjectContextObjectsDidChange(notification: NSNotification) {
+        guard let userInfo = notification.userInfo else {return}
+        
+        if let updates = userInfo[NSUpdatedObjectsKey] as? Set<MyListItem>, updates.count > 0 {
+            fetchAll()
+        }
     }
     
     func saveTo(list: MyListViewModel, title: String, dueDate: Date?) {
