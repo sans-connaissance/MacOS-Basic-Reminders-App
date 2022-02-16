@@ -25,7 +25,7 @@ struct MyListsView: View {
                         MyListItemsHeaderView(name: myList.name, count: 6, color: myList.color)
                         MyListItemsView(items: myList.items, onItemAdded: { title, dueDate in
                             vm.saveTo(list: myList, title: title, dueDate: dueDate)
-                        }, onItemDeleted: vm.deleteItem)
+                        }, onItemDeleted: vm.deleteItem, onItemCompleted: vm.markAsCompleted)
                     } label: {
                         HStack {
                             Image(systemName: Constants.Icons.line3HorizontalCircleFill)
