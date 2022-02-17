@@ -18,6 +18,7 @@ struct MyListsView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
             List {
+                AllCountView(count: vm.allListItemsCount)
                 Text("My List")
                 ForEach(vm.myLists) { myList in
                     

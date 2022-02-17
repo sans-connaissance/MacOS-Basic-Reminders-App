@@ -25,6 +25,12 @@ class MyListsViewModel: NSObject, ObservableObject {
         
     }
     
+    var allListItemsCount: Int {
+        myLists.reduce(0) { sum, vm in
+            sum + vm.itemsCount
+        }
+    }
+    
     private func setupObservers() {
         let notificationCenter = NotificationCenter.default
         notificationCenter.addObserver(self, selector: #selector(managedObjectContextObjectsDidChange), name: NSNotification.Name.NSManagedObjectContextObjectsDidChange, object: context)
