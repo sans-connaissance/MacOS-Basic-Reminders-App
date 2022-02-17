@@ -13,6 +13,7 @@ struct ListItemCell: View {
     @State private var showPopOver: Bool = false
     @State private var checked: Bool = false
     let item: MyListItemViewModel
+    let delay = Delay()
     
     var onListItemDeleted: (MyListItemViewModel) -> Void = {_ in}
     var onListItemCompleted: (MyListItemViewModel) -> Void = {_ in}
@@ -27,7 +28,11 @@ struct ListItemCell: View {
                     checked.toggle()
                     
                     if checked {
-                        onListItemCompleted(item)
+                        delay.performWork {
+                            onListItemCompleted(item)
+                        }
+                    }else {
+                        delay.cancel()
                     }
                 }
             

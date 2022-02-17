@@ -22,7 +22,7 @@ struct MyListsView: View {
                 ForEach(vm.myLists) { myList in
                     
                     NavigationLink {
-                        MyListItemsHeaderView(name: myList.name, count: 6, color: myList.color)
+                        MyListItemsHeaderView(name: myList.name, count: myList.itemsCount, color: myList.color)
                         MyListItemsView(items: myList.items, onItemAdded: { title, dueDate in
                             vm.saveTo(list: myList, title: title, dueDate: dueDate)
                         }, onItemDeleted: vm.deleteItem, onItemCompleted: vm.markAsCompleted)
@@ -32,6 +32,8 @@ struct MyListsView: View {
                                 .font(.title)
                                 .foregroundColor(myList.color)
                             Text(myList.name)
+                            Spacer()
+                            Text("\(myList.itemsCount)")
                         }
                     }.contextMenu{
                         Button {

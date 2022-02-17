@@ -11,6 +11,7 @@ struct HomeScreen: View {
     var body: some View {
         NavigationView {
             SideBarView()
+                .frame(minWidth: 200)
             Text("MyListItems")
         }
     }
